@@ -1,0 +1,78 @@
+<html>
+  <head>
+  <title> SLSUCPE </title>
+  </head>
+ <body background="Background Pic4.png">
+ <font color="#C41EFF">
+  <h1 align="center" > DATABASE SCHEMA </h1>
+ </font>
+ 
+ <form>
+    <h2 align="center"> <font color="#C41EFF"> Customer </font> </h2>
+   <table border="3" align="center" bordercolor="#C41EFF" width="50%">
+   <tr>
+    <th> <font color="#E9E4D4"> CustomerID </font> </th>
+    <th> <font color="#E9E4D4"> FirstName </font> </th>
+    <th> <font color="#E9E4D4"> LastName </font> </th>
+    <th> <font color="#E9E4D4"> DeliveryAddress </font> </th>
+    <th> <font color="#E9E4D4"> Email </font> </th>
+   </tr>
+   <tr>
+    <td><input type="text"  required></td>
+    <td><input type="text"  required></td>
+    <td><input type="text"  required></td>
+    <td><input type="text"  required></td>
+    <td><input type="text"  required></td>
+   </tr>
+  </table>
+  <br>
+    <h2 align="center"> <font color="#C41EFF"> Order </font> </h2>
+   <table border="3" align="center" bordercolor="#C41EFF" width="50%">
+   <tr>
+    <th> <font color="#E9E4D4"> OrderNo </font> </th>
+    <th> <font color="#E9E4D4"> PurchaseDate </font> </th>
+    <th> <font color="#E9E4D4"> OrderAmount </font> </th>
+    <th> <font color="#E9E4D4"> CustomerID </font> </th>
+   </tr>
+   <tr>
+    <td><input type="text"  required></td>
+    <td><input type="text"  required></td>
+    <td><input type="text"  required></td>
+    <td><input type="text"  required></td>
+   </tr>
+  </table>
+  <br>
+    <h2 align="center"> <font color="#C41EFF"> Order Details </font> </h2>
+   <table border="3" align="center" bordercolor="#C41EFF" width="50%">
+   <tr>
+    <th> <font color="#E9E4D4"> OrderDetailsID </font> </th>
+    <th> <font color="#E9E4D4"> OrderNo </font> </th>
+    <th> <font color="#E9E4D4"> ProductID </font> </th>
+   <th> <font color="#E9E4D4"> OrderQuantity </font> </th>
+   </tr>
+   <tr>
+    <td><input type="text"  required></td>
+    <td><input type="text"  required></td>
+    <td><input type="text"  required></td>
+    <td><input type="text"  required></td>
+   </tr>
+   </table>
+   <br>
+    <h2 align="center"> <font color="#C41EFF"> Products </font> </h2>
+   <table border="3" align="center" bordercolor="#C41EFF" width="50%">
+   <tr>
+    <th> <font color="#E9E4D4"> ProductID </font> </th>
+    <th> <font color="#E9E4D4"> ProductName </font> </th>
+    <th> <font color="#E9E4D4"> Category </font> </th>
+    <th> <font color="#E9E4D4"> Price </font> </th>
+   </tr>
+   <tr>
+    <td><input type="text"  required></td>
+    <td><input type="text"  required></td>
+    <td><input type="text"  required></td>
+    <td><input type="text"  required></td>
+   </tr>
+   </table>
+ </form>
+ </body>
+</html>

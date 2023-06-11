@@ -1,0 +1,135 @@
+<html>
+    <head>
+        <title>SLSU Cardinals</title>
+        <link rel="stylesheet" href="lab2.css">
+        <link rel="icon" href="bf.png">
+        <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="header">
+            <div class="car">
+                <img src="neww.png" style="width:150px;heigth:220px">
+            </div>
+            <div class="center">
+                <a> SOUTHERN LUZON STATE UNIVERSITY</a><br>
+                <div class="next_line"><b class="b">TAEKWONDO  <span class="trans">CARDINALS </span> </b></div>
+            </div>
+            <div class="slsu">
+                <img src="slsu.png" style="width:150px;heigth:220px">
+            </div>
+        </div> 
+        <div class="bod">
+            <div class="nav">
+                <a class="active" href="LabTwo.html">home</a>
+                <a href="news.html">news</a>
+                <a href="about.html">about<span class="space"></span>us</a>
+                <a href="team.html">athletes</a>
+                <a href="LabTwo.html" onclick=" alert('Currently unavailable.')"><i class="fas fa-shopping-cart"></i></a>
+               
+            </div><br><br><br>
+            <div class="content">
+                <div class="head">
+                    <p class="an"> Announcement: </p>
+                </div>
+                <div class="vid">
+                    <video width="800" height="800" autoplay muted loop>
+                      <source src="vid.mp4" type="video/mp4">
+                    </video>
+                </div><br><br> 
+                <div class="mar">
+                    <marquee>Join and train with us!</marquee>
+                </div>   
+
+                <div class="form_bottom">
+                    <button class="open-button" onclick="openForm()">Application Form</button>
+                    <div class="form-popup" id="myForm">
+                    <form action="connect.php" class="form-container" method="post">
+
+                        <h1 align="center">Join Us!</h1>
+
+                        <label for="First_name" ><b>First Name:</b></label>
+                        <input type="text" placeholder="Ex. Juan" name="First_name" id="First_name" required>
+
+                        <label for="Last_name" ><b>Last Name:</b></label>
+                        <input type="text" placeholder="Ex. Santos" name="Last_name" id="Last_name" required>
+
+                        <label for="Age"><b>Age:</b></label>
+                        <input type="number" placeholder="Ex. 20" name="Age" id= "Age" required>
+
+                        <label for="Course"><b>Course:</b></label>
+                        <input type="text" placeholder="Ex. BS Computer Engineering" name="Course" id ="Course" required>
+
+                        <label for="Campus"><b>Campus:</b></label>
+                        <input type="text" placeholder="Ex. SLSU - Main Campus" name="Campus" id="Campus" required>
+
+                        <label for="Belt_rank"><b>Belt Rank:</b></label>
+                        <input type="text" placeholder="Ex. 1st Dan Black Belt" name="Belt_rank" id="Belt_rank" required>
+
+                        <label for="Email" ><b>Email Address:</b></label>
+                        <input type="email" placeholder="Ex. jSantos@gmail.com" name="Email" id="Email" required>
+                        
+                        <button type="submit" class="btn">Submit</button>
+                        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+
+                        
+                    </form>
+                    </div>
+                </div>
+
+
+
+
+                <br>
+                <div class="footer">
+                    <a> Contact us: </a>
+                    <br><br><br>
+                    <div class="icons">
+                        <button onclick="fb()">
+                            <i= class="fab fa-facebook-square" style="color: antiquewhite; font-size: xx-large; padding-left: 10px;"> <span class="fb">SLSU Taekwondo Team </span></i>
+                        </button>
+                    <br>
+        
+                        <button onclick="ig()">
+                            <i class="fab fa-instagram" style="color: antiquewhite; font-size: xx-large; padding-left: 5px;"> <span class="fb">@SLSU_Cardinals </span></i> 
+                        </button>
+      
+                    <br>
+                        <form title="Cellphone Number">
+                            <a href="tel:0949-3121-583">
+                                <i class="fas fa-phone"style="color: antiquewhite; font-size: xx-large; padding-left: 5px;"> <span class="fb">0949-3121-583</span></i>
+                            </a>
+                        </form>
+                    </div>
+                </div>
+                <br>
+            </div>
+          </div>
+
+
+
+          <script>
+           console.log('home page');
+
+                function fb(){
+                    window.location.href='https://www.facebook.com/slsutaekwondoteam'
+                }
+                
+                function ig(){
+                    window.location.href='https://www.instagram.com'
+                }
+
+                function openForm() {
+                document.getElementById("myForm").style.display = "block";
+                }
+
+                function submitForm(){
+                    let input = document.getElementById("f_name").value;
+                    alert(" Successful submission, " + input+ ". We will get back to you shortly 🥋");
+                }
+
+                function closeForm() {
+                document.getElementById("myForm").style.display = "none";
+                }
+          </script>
+    </body>
+</html>

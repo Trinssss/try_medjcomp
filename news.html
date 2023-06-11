@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SLSU Cardinals</title>
+        <link rel="stylesheet" href="lab2.css">
+        <link rel="icon" href="bf.png">
+        <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+       
+    </head>
+    <body>
+        <div class="header">
+            <div class="car">
+                <img src="neww.png" style="width:150px;heigth:220px">
+            </div>
+            <div class="center">
+                <a> SOUTHERN LUZON STATE UNIVERSITY</a><br>
+                <div class="next_line"><b class="b">TAEKWONDO  <span class="trans">CARDINALS </span> </b></div>
+            </div>
+            <div class="slsu">
+                <img src="slsu.png" style="width:150px;heigth:220px">
+            </div>
+        </div> 
+        <div class="bod">
+            <div class="nav">
+                <a href="LabTwo.html">home</a>
+                <a class="active" href="news.html">news</a>
+                <a href="about.html">about<span class="space"></span>us</a>
+                <a href="team.html">athletes</a>
+                <a href="news.html" onclick=" alert('Currently unavailable.')"><i class="fas fa-shopping-cart"></i></a>
+                
+            </div> <br>
+            <div class="content">
+               
+                <div class="button_news">
+                    <button class="button_news" onclick="show()"ondblclick="hide()"> ICCAC 2023 </button>
+                </div>
+                <div id="newss">
+                        <div class="bod_news">
+                    
+                            <button  title="source: SLSU Kingfisher" onclick="one()">
+                            <img src="iccac 2023.png" class="iccac" >
+                        </button>
+                    
+                    
+                            <button  title="source: SLSU Kingfisher" onclick="two()">
+                                <img src="news.jpg" class="iccac">
+                            </button>
+                    
+                        <form>
+                            <button  title="source: SLSU Kingfisher" onclick="three()">
+                                <img src="/iccac/kyo-finfly.jpg" class="iccac">
+                        </button>
+                        </form>
+                         </div>
+                    <div class="bod_news">
+                        <form>
+                            <button  title="source: SLSU Kingfisher" type="submit" formaction ="//www.facebook.com/angsalaksak/posts/pfbid0oybQMFnRxJBAw7qUTvhecxbKuxeFiqyJuoTroEZ492oZTHZFbPdwho11TxntKGUbl">
+                            <img src="/iccac/kyo-finfe.jpg" class="iccac" >
+                        </button>
+                        </form>
+                        <form>
+                            <button  title="source: SLSU Kingfisher" type="submit" formaction ="//www.facebook.com/angsalaksak/posts/pfbid0pRaxtj3tkKGZ9aNXjRduRtQtczfu8GvSQaJquvcMpGZsyEZzUYR5binLUgSucTxol">
+                                 <img src="/iccac/speed-open.jpg" class="iccac">
+                            </button>
+                        </form>
+                        <form>
+                            <button  title="source: SLSU Kingfisher" type="submit" formaction ="//www.facebook.com/angsalaksak/posts/pfbid0ByiRtem7PJL2bXnijm5QHDS8X6jk2dp8dUxvD1J5d1nMSkmtP2tSpegVGeZghA7rl">
+                                <img src="/iccac/poom.jpg" class="iccac">
+                           </button>
+                        </form>
+                    </div>
+                </div>
+                <br><br> <br> <br>
+                <div class="mar">
+                    <marquee>Join and train with us!</marquee>
+                </div>   
+                <div class="form_bottom">
+                    <button class="open-button" onclick="openForm()">Application Form</button>
+                    <div class="form-popup" id="myForm">
+                        <form action="connect.php" class="form-container" method="post">
+
+                            <h1 align="center">Join Us!</h1>
+    
+                            <label for="First_name" ><b>First Name:</b></label>
+                            <input type="text" placeholder="Ex. Juan" name="First_name" id="First_name" required>
+    
+                            <label for="Last_name" ><b>Last Name:</b></label>
+                            <input type="text" placeholder="Ex. Santos" name="Last_name" id="Last_name" required>
+    
+                            <label for="Age"><b>Age:</b></label>
+                            <input type="number" placeholder="Ex. 20" name="Age" id= "Age" required>
+    
+                            <label for="Course"><b>Course:</b></label>
+                            <input type="text" placeholder="Ex. BS Computer Engineering" name="Course" id ="Course" required>
+    
+                            <label for="Campus"><b>Campus:</b></label>
+                            <input type="text" placeholder="Ex. SLSU - Main Campus" name="Campus" id="Campus" required>
+    
+                            <label for="Belt_rank"><b>Belt Rank:</b></label>
+                            <input type="text" placeholder="Ex. 1st Dan Black Belt" name="Belt_rank" id="Belt_rank" required>
+    
+                            <label for="Email" ><b>Email Address:</b></label>
+                            <input type="email" placeholder="Ex. jSantos@gmail.com" name="Email" id="Email" required>
+                            
+                            <button type="submit" class="btn">Submit</button>
+                            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+    
+                            
+                        </form>
+                    </div>
+                </div>
+
+
+
+
+                <br>
+                <div class="footer">
+                    <a> Contact us: </a>
+                    <br><br><br>
+                    <div class="icons">
+                       
+                            <button onclick="fb()">
+                                <i= class="fab fa-facebook-square" style="color: antiquewhite; font-size: xx-large; padding-left: 10px;"> <span class="fb">SLSU Taekwondo Team </span></i>
+                            </button>
+                        <br>
+            
+                            <button onclick="ig()">
+                                <i class="fab fa-instagram" style="color: antiquewhite; font-size: xx-large; padding-left: 5px;"> <span class="fb">@SLSU_Cardinals </span></i> 
+                            </button>
+          
+                        <br>
+                        <form title="Cellphone Number">
+                            <a href="tel:0949-3121-583">
+                                <i class="fas fa-phone"style="color: antiquewhite; font-size: xx-large; padding-left: 5px;"> <span class="fb">0949-3121-583</span></i>
+                            </a>
+                        </form>
+                    </div>
+                </div>
+                <br>
+            </div>
+        
+            <script>
+                
+                console.log('news page');
+
+                function one(){
+                    window.location.href='https://www.facebook.com/angsalaksak/posts/pfbid02PHrAK4Jubkg9HVUUeMW8a8K5p6ZiAMpXzTpz8ffc5D4dz8PfFBwKpgQ8g1eG7PV4l'
+                }
+
+                function two(){
+                    window.location.href='https://www.facebook.com/angsalaksak/posts/pfbid0Yuobxwnjukg52Sb3GP4Nq5dAZVTtW9oJPmjhR5T5v1thp4ysKF1iN6nuHpzzExCWl'
+                }
+
+                function three(){
+                    window.location.href='https://www.facebook.com/angsalaksak/posts/pfbid02dPqDX3Gs65YfD1JM3XuWuVHAW92bT4DjdUhMaf2HX2iWHXjKwcjWd7vpnMFVBYqvl'
+                }
+
+                function four(){
+                    window.location.href='https://www.facebook.com/angsalaksak/posts/pfbid02PHrAK4Jubkg9HVUUeMW8a8K5p6ZiAMpXzTpz8ffc5D4dz8PfFBwKpgQ8g1eG7PV4l'
+                }
+
+                function five(){
+                    window.location.href='https://www.facebook.com/angsalaksak/posts/pfbid02PHrAK4Jubkg9HVUUeMW8a8K5p6ZiAMpXzTpz8ffc5D4dz8PfFBwKpgQ8g1eG7PV4l'
+                }
+
+                function six(){
+                    window.location.href='https://www.facebook.com/angsalaksak/posts/pfbid02PHrAK4Jubkg9HVUUeMW8a8K5p6ZiAMpXzTpz8ffc5D4dz8PfFBwKpgQ8g1eG7PV4l'
+                }
+
+
+                
+                function fb(){
+                    window.location.href='//www.facebook.com/slsutaekwondoteam'
+                }
+                
+                function ig(){
+                    window.location.href='https://www.instagram.com'
+                }
+
+                function show() {
+                document.getElementById("newss").style.display="block";
+                }
+                function hide() {
+                document.getElementById("newss").style.display="none";
+                }
+
+                function openForm() {
+                document.getElementById("myForm").style.display = "block";
+                }
+
+                function submitForm(){
+                    let input = document.getElementById("f_name").value;
+                    alert(" Successful submission, " + input+ ". We will get back to you shortly 🥋");
+                }
+
+                function closeForm() {
+                document.getElementById("myForm").style.display = "none";
+                }
+                
+               </script>
+    </body>
+</html>
